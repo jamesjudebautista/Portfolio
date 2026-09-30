@@ -1,9 +1,13 @@
 import { useState } from 'react'
+import { paxScreens, uobScreens, sproutScreens, srddScreens,
+   streamWatchScreens , seatsScreens, LeaderSummitScreens, ofwScreens,
+   miScreens, naviScreens, uhopScreens, cmpScreens
+ } from '../../../utils/constant'
 
 // =====================================================================
 // Shared building blocks
 // =====================================================================
-const BASE = import.meta.env.BASE_URL
+
 
 // Extract the "v" param from a YouTube URL like https://www.youtube.com/watch?v=XXX
 function getYoutubeId(url: string): string | null {
@@ -127,17 +131,6 @@ function CompanyGroup({ name, highlight = false, children }: { name: string; hig
 // Company sections
 // =====================================================================
 
-// PAX screenshots for Mercola
-const paxScreens = [
-  { label: 'Pax Voice',      image: `${BASE}pax/03-voice.jpg`,       alt: 'Pax Voice — real-time voice coach' },
-  { label: 'Home',           image: `${BASE}pax/02-home.jpg`,        alt: 'PAX home dashboard' },
-  { label: 'Food Buddy',     image: `${BASE}pax/04-food-buddy.jpg`,  alt: 'Food Buddy food logging' },
-  { label: 'Assessment',     image: `${BASE}pax/05-assessment.jpg`,  alt: 'Wellness assessment' },
-  { label: 'My Health',      image: `${BASE}pax/06-my-health.jpg`,   alt: 'My Health — results and reports' },
-  { label: 'Stride Strong',  image: `${BASE}pax/07-stride.jpg`,      alt: 'Stride Strong movement tracking' },
-  { label: 'Shop',           image: `${BASE}pax/08-shop.jpg`,        alt: 'Shop — supplements and lab tests' },
-  { label: 'Welcome',        image: `${BASE}pax/01-welcome.jpg`,     alt: 'PAX welcome screen' },
-]
 
 function Mercola() {
   return (
@@ -186,7 +179,7 @@ function VeritasPay() {
         description="Kotlin payment terminals for in-person card & QR transactions on Nexgo and Pax devices. Hardened security around payment flows and improved UI responsiveness on constrained POS hardware."
       >
         <VideoThumb
-          href="https://www.youtube.com/watch?v=zv_7Rc0WcvY"
+          href="http://www.youtube.com/watch?v=zv_7Rc0WcvY"
           imgSrc="https://img.youtube.com/vi/zv_7Rc0WcvY/hqdefault.jpg"
           imgAlt="Tap. Pay. Done."
           label="Tap. Pay. Done."
@@ -206,13 +199,13 @@ function UOB() {
         title="UOB TMRW — Regional Banking"
         description="Regional mobile banking platform serving Singapore, Malaysia, Thailand and Indonesia. Diagnosed complex production incidents across four country builds and shipped Kotlin features under strict banking compliance."
       >
-        <VideoThumb
-          href="https://www.youtube.com/watch?v=DXglgNQamv8"
-          imgSrc="https://img.youtube.com/vi/DXglgNQamv8/hqdefault.jpg"
-          imgAlt="UOB TMRW"
-          label="UOB TMRW"
-          caption="Regional banking · SG/MY/TH/ID"
-        />
+       {uobScreens.map((s) => (
+          <figure key={s.label} className="w-[140px] flex-none snap-start sm:w-[160px]">
+            <div className="overflow-hidden rounded-[1.4rem] border border-paper-300 bg-paper-50 shadow-sm">
+              <img src={s.image} alt={s.alt} loading="lazy" className="block h-auto w-full" />
+            </div>
+          </figure>
+        ))}
       </AppTile>
     </CompanyGroup>
   )
@@ -228,20 +221,29 @@ function GlobalPayments() {
         description="Greenfield restaurant POS with advanced bill-splitting. Migrated the legacy JavaScript codebase to Kotlin on Clean Architecture, set coding standards and embedded code-review practices across the team."
       >
         <VideoThumb
-          href="https://www.youtube.com/watch?v=JT4W7vzUBMQ"
-          imgSrc="https://img.youtube.com/vi/JT4W7vzUBMQ/hqdefault.jpg"
+          href="http://www.youtube.com/watch?v=DXglgNQamv8"
+          imgSrc="https://img.youtube.com/vi/DXglgNQamv8/hqdefault.jpg"
           imgAlt="P@TT"
           label="P@TT"
           caption="Pay at the table"
         />
       </AppTile>
+
       <AppTile
-        span="lg:col-span-6"
         accentPill="POS · Add-on"
         pills={['Java', 'Kotlin', 'Android SDK', 'REST APIs']}
-        title="Gift App — POS add-on"
+        title="Gift App"
         description="Gift card, e-gift and loyalty redemption modules running alongside the payment app on Android terminals."
-      />
+        >
+          <VideoThumb
+          href="http://www.youtube.com/watch?v=JT4W7vzUBMQ"
+          imgSrc="https://img.youtube.com/vi/JT4W7vzUBMQ/hqdefault.jpg"
+          imgAlt="Gift App"
+          label="Gift App"
+          caption="POS add-on"
+        />
+      </AppTile>
+      
     </CompanyGroup>
   )
 }
@@ -250,12 +252,19 @@ function Sprout() {
   return (
     <CompanyGroup name="Sprout Solutions">
       <AppTile
-        span="lg:col-span-6"
         accentPill="HR · Mobile"
         pills={['Flutter', 'Dart', 'Provider / BLoC', 'REST APIs']}
         title="Sprout HR (Flutter)"
         description="Employee directory and clock-in / clock-out, built from scratch. Architected for clean separation of concerns with Provider / BLoC state management."
-      />
+       >
+       {sproutScreens.map((s) => (
+          <figure key={s.label} className="w-[140px] flex-none snap-start sm:w-[160px]">
+            <div className="overflow-hidden rounded-[1.4rem] border border-paper-300 bg-paper-50 shadow-sm">
+              <img src={s.image} alt={s.alt} loading="lazy" className="block h-auto w-full" />
+            </div>
+          </figure>
+        ))}
+      </AppTile>
     </CompanyGroup>
   )
 }
@@ -270,8 +279,8 @@ function SRDD() {
         description="Plug-and-play Android POS handling ordering, payments and receipt printing across multiple companies, integrating Nets terminals over USB serial and Star printers. Engineered as reusable Android libraries."
       >
         <VideoThumb
-          href="https://www.youtube.com/watch?v=lbwBZ9feRKk"
-          imgSrc="https://img.youtube.com/vi/lbwBZ9feRKk/hqdefault.jpg"
+          href="https://www.youtube.com/watch?v=14FkdV9EWHI"
+          imgSrc="https://img.youtube.com/vi/14FkdV9EWHI/hqdefault.jpg"
           imgAlt="Sri Sivan POS"
           label="Sri Sivan POS"
           caption="Temple ordering & payment"
@@ -280,45 +289,90 @@ function SRDD() {
       <AppTile
         accentPill="Multimedia · 3D"
         pills={['Java', 'Swift 4', '3D rendering', 'Multimedia']}
-        title="EyeFly3D Pix"
-        description="Sole developer for both Android (Java) and iOS (Swift 4) versions of an app converting 2D pictures to stereoscopic 3D, with multimedia processing and platform-specific performance tuning."
+        title="EyeFly3D Pix and Vid"
+        description="Sole developer for both Android (Java) and iOS (Swift 4) versions of an app converting 2D pictures to stereoscopic 3D, with multimedia processing and platform-specific performance tuning. and Automatic 2D-to-3D video conversion built on the same multimedia pipeline."
       >
-        <VideoThumb
-          href="https://www.youtube.com/watch?v=14FkdV9EWHI"
-          imgSrc="https://img.youtube.com/vi/14FkdV9EWHI/hqdefault.jpg"
-          imgAlt="EyeFly3D"
-          label="EyeFly3D"
-          caption="2D to stereoscopic 3D"
-        />
+        {srddScreens.map((s) => (
+          <figure key={s.label} className="w-[140px] flex-none snap-start sm:w-[160px]">
+            <div className="overflow-hidden rounded-[1.4rem] border border-paper-300 bg-paper-50 shadow-sm">
+              <img src={s.image} alt={s.alt} loading="lazy" className="block h-auto w-full" />
+            </div>
+          </figure>
+        ))}
+        
       </AppTile>
       <AppTile
-        span="lg:col-span-6"
         accentPill="Desktop · POS"
         pills={['.NET', 'C#', 'Nets API', 'Bixolon']}
         title="M1 Cashless (.NET)"
         description="Sole developer maintaining and extending a .NET desktop POS, integrating Nets payment terminals and Bixolon printers in C#."
-      />
-      <AppTile
-        span="lg:col-span-6"
-        accentPill="Multimedia · 3D"
-        pills={['Java', 'Swift', 'Video processing']}
-        title="EyeFly3D Vid"
-        description="Automatic 2D-to-3D video conversion built on the same multimedia pipeline."
-      />
+      >
+        <VideoThumb
+          href="https://www.youtube.com/watch?v=lbwBZ9feRKk"
+          imgSrc="https://img.youtube.com/vi/lbwBZ9feRKk/hqdefault.jpg"
+          imgAlt="Sri Sivan POS"
+          label="Sri Sivan POS"
+          caption="Temple ordering & payment"
+        />
+      </AppTile>
     </CompanyGroup>
   )
 }
 
 function Yondu() {
   const yonduApps: AppTileProps[] = [
-    { span: 'lg:col-span-6', accentPill: 'Mobile', pills: ['Java', 'Android SDK', 'Roku API'], title: 'Streamwatch — Remote', description: 'Android remote control for Roku-powered TVs, with firmware update notifications and a smoother UX than the physical remote.' },
-    { span: 'lg:col-span-6', accentPill: 'Mobile', pills: ['BrightScript', 'Roku'], title: 'Streamwatch — TV Channels', description: 'Roku-based TV channel app managing and monitoring user access to new content channels.' },
-    { span: 'lg:col-span-6', accentPill: 'Mobile', pills: ['Java', 'Barcode', 'REST APIs'], title: 'Punch Card — Loyalty', description: 'Loyalty card app with barcode scanning, reward tracking and store-availability lookup.' },
-    { span: 'lg:col-span-6', accentPill: 'Mobile', pills: ['Java', 'REST APIs'], title: 'Seats — Restaurant Booking', description: 'Booking platform letting users reserve tables at partner restaurants without calling.' },
-    { span: 'lg:col-span-6', accentPill: 'Mobile', pills: ['Java', 'Chat', 'REST APIs'], title: 'Leader Summit App', description: 'Social-style event app delivering updates and private group chat during the Leader Summit.' },
-    { span: 'lg:col-span-6', accentPill: 'Mobile', pills: ['Java', 'Telephony'], title: 'OFW Emergency Call', description: 'Emergency call app providing free, accessible calling support for overseas Filipino workers.' },
-    { span: 'lg:col-span-6', accentPill: 'Mobile', pills: ['Java', 'SQLite'], title: 'CMP Pocket Guide', description: 'Emergency-contact app holding employee contact details for internal corporate use.' },
-    { span: 'lg:col-span-6', accentPill: 'Mobile', pills: ['Java', 'Telephony'], title: 'Globe Labs Caller', description: 'App displaying a company logo during incoming overseas calls for brand marketing.' },
+    {
+      accentPill: 'Mobile',
+      pills: ['Java', 'Android SDK', 'Roku API'],
+      title: 'Streamwatch Remote',
+      description: 'Android remote control for Roku-powered TVs, with firmware update notifications and a smoother UX than the physical remote.',
+      children: streamWatchScreens.map((s) => (
+          <figure key={s.label} className="w-[140px] flex-none snap-start sm:w-[160px]">
+            <div className="overflow-hidden rounded-[1.4rem] border border-paper-300 bg-paper-50 shadow-sm">
+              <img src={s.image} alt={s.alt} loading="lazy" className="block h-auto w-full" />
+            </div>
+          </figure>
+      )),
+    },
+    { span: "lg:col-span-6", accentPill: 'Mobile', pills: ['BrightScript', 'Roku'], title: 'Streamwatch — TV Channels', description: 'Roku-based TV channel app managing and monitoring user access to new content channels.' },
+    { span: 'lg:col-span-6', accentPill: 'Mobile', pills: ['Java', 'Barcode', 'REST APIs'], title: 'Punch Card — Loyalty', description: 'Loyalty card app with barcode scanning, reward tracking and store-availability lookup.'},
+    {  accentPill: 'Mobile', pills: ['Java', 'REST APIs'], title: 'Seats — Restaurant Booking', description: 'Booking platform letting users reserve tables at partner restaurants without calling.' ,
+       children: seatsScreens.map((s) => (
+          <figure key={s.label} className="w-[140px] flex-none snap-start sm:w-[160px]">
+            <div className="overflow-hidden rounded-[1.4rem] border border-paper-300 bg-paper-50 shadow-sm">
+              <img src={s.image} alt={s.alt} loading="lazy" className="block h-auto w-full" />
+            </div>
+          </figure>
+      )),
+    },
+    {  accentPill: 'Mobile', pills: ['Java', 'Chat', 'REST APIs'], title: 'Leader Summit App', description: 'Social-style event app delivering updates and private group chat during the Leader Summit.',
+       children: LeaderSummitScreens.map((s) => (
+          <figure key={s.label} className="w-[140px] flex-none snap-start sm:w-[160px]">
+            <div className="overflow-hidden rounded-[1.4rem] border border-paper-300 bg-paper-50 shadow-sm">
+              <img src={s.image} alt={s.alt} loading="lazy" className="block h-auto w-full" />
+            </div>
+          </figure>
+      )),
+     },
+    {  accentPill: 'Mobile', pills: ['Java', 'Telephony'], title: 'OFW Emergency Call', description: 'Emergency call app providing free, accessible calling support for overseas Filipino workers.' ,
+        children: ofwScreens.map((s) => (
+          <figure key={s.label} className="w-[140px] flex-none snap-start sm:w-[160px]">
+            <div className="overflow-hidden rounded-[1.4rem] border border-paper-300 bg-paper-50 shadow-sm">
+              <img src={s.image} alt={s.alt} loading="lazy" className="block h-auto w-full" />
+            </div>
+          </figure>
+      )),
+    },
+    {  accentPill: 'Mobile', pills: ['Java', 'SQLite'], title: 'CMP Pocket Guide', description: 'Emergency-contact app holding employee contact details for internal corporate use.' ,
+          children: cmpScreens.map((s) => (
+          <figure key={s.label} className="w-[140px] flex-none snap-start sm:w-[160px]">
+            <div className="overflow-hidden rounded-[1.4rem] border border-paper-300 bg-paper-50 shadow-sm">
+              <img src={s.image} alt={s.alt} loading="lazy" className="block h-auto w-full" />
+            </div>
+          </figure>
+      )),
+    },
+    {  span: 'lg:col-span-6',accentPill: 'Mobile', pills: ['Java', 'Telephony'], title: 'Globe Labs Caller', description: 'App displaying a company logo during incoming overseas calls for brand marketing.'},
   ]
   return (
     <CompanyGroup name="Yondu, Inc. (Globe Telecom)">
@@ -331,10 +385,34 @@ function Yondu() {
 
 function Earlier() {
   const earlierApps: AppTileProps[] = [
-    { span: 'lg:col-span-6', accentPill: 'Mobile', pills: ['Java', 'Google Maps SDK'], title: 'Mi-Track (Majella 🇦🇺)', description: 'GPS routing app delivering turn-by-turn route instructions.' },
-    { span: 'lg:col-span-6', accentPill: 'Mobile', pills: ['Java', 'Maps', 'REST APIs'], title: 'U-Hop (ANVO)', description: 'Uber / Grab-style ride-hailing app, owned end-to-end from design to release.' },
+    { accentPill: 'Mobile', pills: ['Java', 'Google Maps SDK'], title: 'Mi-Track (Majella 🇦🇺)', description: 'GPS routing app delivering turn-by-turn route instructions.',
+        children: miScreens.map((s) => (
+          <figure key={s.label} className="w-[140px] flex-none snap-start sm:w-[160px]">
+            <div className="overflow-hidden rounded-[1.4rem] border border-paper-300 bg-paper-50 shadow-sm">
+              <img src={s.image} alt={s.alt} loading="lazy" className="block h-auto w-full" />
+            </div>
+          </figure>
+      )),
+     },
+    { accentPill: 'Mobile', pills: ['Java', 'Maps', 'REST APIs'], title: 'U-Hop (ANVO)', description: 'Uber / Grab-style ride-hailing app, owned end-to-end from design to release.' ,
+        children: uhopScreens.map((s) => (
+          <figure key={s.label} className="w-[140px] flex-none snap-start sm:w-[160px]">
+            <div className="overflow-hidden rounded-[1.4rem] border border-paper-300 bg-paper-50 shadow-sm">
+              <img src={s.image} alt={s.alt} loading="lazy" className="block h-auto w-full" />
+            </div>
+          </figure>
+      )),
+    },
     { span: 'lg:col-span-6', accentPill: 'Mobile', pills: ['C++', 'COCOS2D'], title: 'Lucky 9 (ANVO/Mownecom)', description: 'Mobile card game built in C++ on COCOS2D.' },
-    { span: 'lg:col-span-6', accentPill: 'Mobile', pills: ['Java', 'Automation'], title: 'NAVI Mobile — SEO', description: 'Auto-clicker and finder tool for site ranking.' },
+    { accentPill: 'Mobile', pills: ['Java', 'Automation'], title: 'NAVI Mobile — SEO', description: 'Auto-clicker and finder tool for site ranking.' ,
+        children: naviScreens.map((s) => (
+          <figure key={s.label} className="w-[140px] flex-none snap-start sm:w-[160px]">
+            <div className="overflow-hidden rounded-[1.4rem] border border-paper-300 bg-paper-50 shadow-sm">
+              <img src={s.image} alt={s.alt} loading="lazy" className="block h-auto w-full" />
+            </div>
+          </figure>
+      )),
+    },
     { span: 'lg:col-span-6', accentPill: 'Mobile', pills: ['Java', 'SQLite'], title: 'Attendance App', description: 'Signature-based attendance capture with database sync.' },
     { span: 'lg:col-span-6', accentPill: 'Mobile', pills: ['Java', 'Media'], title: 'Pingpong App', description: 'Batch-download and playback of company videos.' },
   ]

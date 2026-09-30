@@ -41,9 +41,9 @@ const contactLinks: ContactLink[] = [
     ),
   },
   {
-    href: 'https://github.com/jamesjude123',
+    href: 'https://github.com/jamesjudebautista',
     label: 'GitHub',
-    value: 'github.com/jamesjude123',
+    value: 'github.com/jamesjudebautista',
     external: true,
     icon: (
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">

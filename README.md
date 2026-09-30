@@ -3,7 +3,7 @@
 Personal portfolio website built from scratch in React + Vite + Tailwind, deployed to GitHub Pages.
 
 **Live site:** [jamesjude123.github.io/Portfolio](https://jamesjude123.github.io/Portfolio/)
-**CV:** [Google Drive](https://drive.google.com/file/d/1EnlXDUOV-F9rLo2czbklgAmdi55LDtvj/view?usp=sharing)
+**CV:** [Google Drive](https://drive.google.com/file/d/1GfRpnCPpLVW70Q5RvO5CVqMnGHaXoKO1/view?usp=sharing)
 
 ---
 

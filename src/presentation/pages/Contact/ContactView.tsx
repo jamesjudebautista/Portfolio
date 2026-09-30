@@ -178,7 +178,7 @@ function ContactView() {
 
           {/* View CV — opens Google Drive in new tab */}
           <a
-            href="https://drive.google.com/file/d/1EnlXDUOV-F9rLo2czbklgAmdi55LDtvj/view?usp=sharing"
+            href="https://drive.google.com/file/d/1GfRpnCPpLVW70Q5RvO5CVqMnGHaXoKO1/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="group flex items-center gap-4 rounded-3xl border border-cinnamon-700 bg-gradient-to-br from-cinnamon-600 to-clay-600 p-5 text-paper-50 shadow-warm-glow"

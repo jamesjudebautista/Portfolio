@@ -14,7 +14,7 @@ const timeline: TimelineEntry[] = [
         duration: 'Current',
         company: 'Mercola Consulting Services · 🇵🇭',
         role: 'Full-Stack Developer · Android · iOS · Backend APIs',
-        description: 'Building PAX — Mercola Health Coach 2.0. Shipped 20+ feature modules in Kotlin on a 100% Jetpack Compose UI: a voice-first AI coach on LiveKit, CameraX food logging, health assessments, and lab reports, backed by AWS cloud infrastructure and Java Spring Boot APIs built on MVVM + Clean Architecture with Hilt.',
+        description: 'Building PAX — Mercola Health Coach 2.0. Shipped 20+ feature modules across Android (Kotlin with 100% Jetpack Compose UI) and iOS (SwiftUI / Swift 5), featuring a voice-first AI coach on LiveKit, CameraX/mobile food logging, health assessments, and lab reports. Powered by AWS cloud infrastructure and Java Spring Boot backend APIs built on MVVM + Clean Architecture with Hilt.',
         isCurrent: true
     },
     {

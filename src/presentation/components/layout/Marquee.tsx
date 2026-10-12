@@ -9,11 +9,15 @@ interface Tile {
 
 const tiles: Tile[] = [
   { category: 'Mobile',       items: 'Android · iOS · Flutter · KMP',                variant: 'cinnamon', rotate: '-rotate-2' },
-  { category: 'Full-Stack',   items: 'React · TypeScript · Node.js · PostgreSQL',    variant: 'paper',    rotate: 'rotate-1'  },
+  { category: 'Frontend',     items: 'React · TypeScript ',                          variant: 'paper',    rotate: 'rotate-1'  },
+  { category: 'API Gateway',  items: 'Node.js · TypeScript · Java · Springboot',     variant: 'cinnamon', rotate: '-rotate-1' },
+  { category: 'Database',     items: 'MySQL · PostgreSQL · SQL · DynamoDB',          variant: 'paper', rotate: '-rotate-1'    },
   { category: 'DevOps',       items: 'K8s · Helm · Terraform · Jenkins',             variant: 'cinnamon', rotate: '-rotate-1' },
   { category: 'AI-Augmented', items: 'Claude · ChatGPT · Gemini · Codex',            variant: 'paper',    rotate: 'rotate-2'  },
+  { category: 'Backend',      items: 'K8s · Helm · Terraform · Jenkins',             variant: 'cinnamon', rotate: '-rotate-1' },
   { category: 'Leadership',   items: 'Hired into Lead & Tech-Lead roles',            variant: 'coal',     rotate: '-rotate-2' },
   { category: 'Payments',     items: 'UOB · VeritasPay · Global Payments · SRDD',    variant: 'cinnamon', rotate: 'rotate-1'  },
+  { category: 'Monitoring',   items: 'Prometheus · Grafana · Firebase Analytics/Crashlytics',    variant: 'paper',    rotate: 'rotate-2'  },
 ]
 
 // Map each variant to its specific Tailwind classes

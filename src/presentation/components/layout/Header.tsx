@@ -66,14 +66,26 @@ function Header() {
 
           {/* CV button — opens Google Drive CV in new tab */}
           <a
-            href="https://drive.google.com/file/d/1EnlXDUOV-F9rLo2czbklgAmdi55LDtvj/view?usp=sharing"
+            href="https://drive.google.com/file/d/1GfRpnCPpLVW70Q5RvO5CVqMnGHaXoKO1/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-1 rounded-full bg-gradient-to-r from-cinnamon-600 to-clay-600 px-3 py-1.5 text-[10px] font-bold text-white shadow-warm-glow transition hover:scale-[1.02] sm:gap-2 sm:px-4 sm:py-2 sm:text-xs"
           >
-            <span>CV</span>
+            <span>CV / Resume</span>
             <span>↓</span>
           </a>
+
+          {/* CoverLetter button — opens Google Drive Cover Letter in new tab */}
+          <a
+            href="https://drive.google.com/file/d/1Rf1E5-uUUXaB9g-OQi4fo1RwR19lp8h7/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1 rounded-full bg-gradient-to-r from-cinnamon-600 to-clay-600 px-3 py-1.5 text-[10px] font-bold text-white shadow-warm-glow transition hover:scale-[1.02] sm:gap-2 sm:px-4 sm:py-2 sm:text-xs"
+          >
+            <span>Cover Letter</span>
+            <span>↓</span>
+          </a>
+
 
         </div>
       </div>

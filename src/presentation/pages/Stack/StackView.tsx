@@ -34,10 +34,21 @@ const categories: StackCategory[] = [
         <polyline points="8 6 2 12 8 18" />
       </svg>
     ),
-    pills: ['React.js', 'TypeScript', 'Tailwind CSS', 'Node.js', 'Express', 'REST APIs', 'Server-side arch', '.NET (C#)'],
+    pills: ['React.js', 'TypeScript', 'Tailwind CSS', 'Node.js', 'Express', 'REST APIs', 'Server-side arch', '.NET (C#)', 'Java Spring Boot'],
+  },
+    {
+    number: '/03',
+    title: 'Database & Storage',
+    icon: (
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+        <polyline points="16 18 22 12 16 6" />
+        <polyline points="8 6 2 12 8 18" />
+      </svg>
+    ),
+    pills: ['MySQL', 'PostgreSQL', 'SQL', 'DynamoDB', 'Room', 'DataStore', 'SQLite', 'Firebase Realtime DB', 'Firebase Firestore'],
   },
   {
-    number: '/03',
+    number: '/04',
     title: 'Architecture & Patterns',
     icon: (
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -49,7 +60,7 @@ const categories: StackCategory[] = [
     pills: ['Clean Architecture', 'MVC', 'MVI', 'MVVM', 'MVP', 'Redux', 'Unidirectional Data Flow', 'SOLID', 'Modularization', 'DI · Hilt', 'DI · Koin'],
   },
   {
-    number: '/04',
+    number: '/05',
     title: 'Async, Data & APIs',
     icon: (
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -61,7 +72,7 @@ const categories: StackCategory[] = [
     pills: ['Coroutines', 'Flow / StateFlow', 'LiveData', 'RxJava2', 'Retrofit', 'Ktor', 'LiveKit (real-time voice)', 'WebRTC audio', 'Sockets', 'REST · JSON · XML', 'Room', 'DataStore', 'SQLite', 'PostgreSQL'],
   },
   {
-    number: '/05',
+    number: '/06',
     title: 'DevOps & Infrastructure',
     icon: (
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -72,7 +83,7 @@ const categories: StackCategory[] = [
     pills: ['Jenkins', 'Azure DevOps Pipelines', 'GitHub Actions', 'GitLab CI', 'Docker', 'Kubernetes', 'containerd', 'Helm', 'NGINX', 'Terraform', 'Prometheus', 'Grafana', 'RBAC', 'Bash', 'Linux', 'On-prem infra', 'ETL pipelines', 'Release automation'],
   },
   {
-    number: '/06',
+    number: '/07',
     title: 'AI-augmented Engineering',
     icon: (
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -84,7 +95,7 @@ const categories: StackCategory[] = [
     pills: ['Claude', 'ChatGPT', 'Gemini', 'Codex', 'Prompt engineering', 'AI-assisted code review', 'AI refactoring', 'AI test generation', 'AI tech writing'],
   },
   {
-    number: '/07',
+    number: '/08',
     title: 'Quality & Testing',
     icon: (
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -95,17 +106,17 @@ const categories: StackCategory[] = [
     pills: ['JUnit4', 'JUnit5', 'Mockito', 'Espresso', 'Katalon Studio', 'Playwright (E2E)', 'Code reviews', 'Static analysis', 'Crashlytics'],
   },
   {
-    number: '/08',
+    number: '/09',
     title: 'Security & Integration',
     icon: (
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
         <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
       </svg>
     ),
-    pills: ['SSO', 'LDAP', 'Active Directory', 'OAuth2 / OIDC', 'API security', 'RSA encryption', 'Token mgmt', 'Key mgmt', 'TLS / HTTPS hardening', 'Credential Manager', 'Biometric auth', 'App-lock PIN'],
+    pills: ['SSO', 'LDAP', 'Active Directory', 'OAuth2 / OIDC', 'API security', 'RSA encryption', 'OAuth Token ', 'Key mgmt', 'TLS / HTTPS hardening', 'Credential Manager', 'Biometric auth', 'App-lock PIN'],
   },
   {
-    number: '/09',
+    number: '/10',
     title: 'Compliance & Standards',
     icon: (
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -118,7 +129,7 @@ const categories: StackCategory[] = [
     pills: ['HIPAA-aware', 'ISO 27001-aware', 'PCI DSS-aware', 'Data privacy by design', 'Secure SDLC'],
   },
   {
-    number: '/10',
+    number: '/11',
     title: 'Payments & POS',
     icon: (
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -129,7 +140,7 @@ const categories: StackCategory[] = [
     pills: ['ISO 8583', 'EMV', 'PCI-aware', 'Nets API', 'USB Serial (COM)', 'Star printers', 'Bixolon printers', 'Nexgo terminals', 'Pax terminals'],
   },
   {
-    number: '/11',
+    number: '/12',
     title: 'Cloud & Backend Tooling',
     icon: (
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -139,7 +150,7 @@ const categories: StackCategory[] = [
     pills: ['Firebase App Distribution', 'FCM', 'Firebase Realtime DB', 'Crashlytics', 'Firebase Analytics', 'Google Maps SDK', 'Azure DevOps'],
   },
   {
-    number: '/12',
+    number: '/13',
     title: 'VCS & IDEs',
     icon: (
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -241,12 +252,14 @@ function StackView() {
             PAX · voice-first health coach
           </h3>
           <p className="mt-2 text-sm leading-relaxed text-coal-600">
-            A consumer health app in Kotlin on a 100% Jetpack Compose UI. Real-time voice coaching over LiveKit, camera-based food logging on CameraX, a 40-question health assessment, lab reports, and movement tracking through Health Connect — all on MVVM + Clean Architecture with Hilt, behind biometric app-lock.
+          Here is the updated summary that incorporates iOS (Swift 5 / SwiftUI), Java Spring Boot, AWS Services (EC2, Lambda, S3, API Gateway, DynamoDB), and automated CI/CD pipelines:
+
+A cross-platform consumer health app with native mobile clients in Kotlin (100% Jetpack Compose) and iOS (Swift 5 / SwiftUI), backed by a Java Spring Boot backend on AWS (EC2, Lambda, S3, API Gateway, DynamoDB). Features real-time voice coaching over LiveKit, camera-based food logging on CameraX, a 40-question health assessment, lab reports, and movement tracking through Health Connect — all engineered on MVVM + Clean Architecture with Hilt, secured behind biometric app-lock, and delivered via automated Azure DevOps / GitHub Actions CI/CD pipelines.
           </p>
           <div className="mt-4 flex flex-wrap gap-1.5">
             <span className="inline-flex items-center rounded-full border border-cinnamon-300 bg-cinnamon-200/50 px-3 py-1 font-mono text-[11px] font-semibold tracking-wide text-cinnamon-800">Kotlin</span>
             <span className="inline-flex items-center rounded-full border border-cinnamon-300 bg-cinnamon-200/50 px-3 py-1 font-mono text-[11px] font-semibold tracking-wide text-cinnamon-800">Jetpack Compose</span>
-            {['Material 3', 'LiveKit', 'CameraX', 'Hilt', 'Coroutines · Flow', 'Retrofit', 'Health Connect', 'Azure DevOps'].map((p) => (
+            {['Swift 5 / SwiftUI', 'Java Spring Boot', 'AWS Services', 'Automated CI/CD', 'Azure DevOps'].map((p) => (
               <span key={p} className="inline-flex items-center rounded-full border border-paper-300 bg-paper-100 px-3 py-1 font-mono text-[11px] font-medium tracking-wide text-coal-700">
                 {p}
               </span>

@@ -192,12 +192,34 @@ function ContactView() {
             </div>
             <div className="min-w-0 flex-1">
               <p className="font-mono text-[10px] font-bold uppercase tracking-[0.3em] text-paper-50/80">
-                Resume
+                CV/Resume
               </p>
               <p className="text-sm font-bold text-paper-50">View CV</p>
             </div>
             <span className="text-paper-50/80 transition group-hover:translate-x-1">↓</span>
           </a>
+
+           <a
+            href="https://drive.google.com/file/d/1Rf1E5-uUUXaB9g-OQi4fo1RwR19lp8h7/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group flex items-center gap-4 rounded-3xl border border-cinnamon-700 bg-gradient-to-br from-cinnamon-600 to-clay-600 p-5 text-paper-50 shadow-warm-glow"
+          >
+            <div className="flex h-12 w-12 flex-none items-center justify-center rounded-2xl bg-paper-50/20 text-paper-50">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                <polyline points="7 10 12 15 17 10" />
+                <line x1="12" x2="12" y1="15" y2="3" />
+              </svg>
+            </div>
+            <div className="min-w-0 flex-1">
+              <p className="font-mono text-[10px] font-bold uppercase tracking-[0.3em] text-paper-50/80">
+                Cover Letter
+              </p>
+              <p className="text-sm font-bold text-paper-50">View Cover Letter</p>
+            </div>
+            <span className="text-paper-50/80 transition group-hover:translate-x-1">↓</span>
+          </a>  
         </div>
 
         {/* ---- FORM (col 3) ---- */}

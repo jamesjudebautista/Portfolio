@@ -104,7 +104,15 @@ function HomeView() {
                             <span className="rounded-full border border-coal-700 bg-coal-800 px-2.5 py-1 font-mono text-[10px] font-semibold text-paper-200">LiveKit</span>
                             <span className="rounded-full border border-coal-700 bg-coal-800 px-2.5 py-1 font-mono text-[10px] font-semibold text-paper-200">CameraX</span>
                             <span className="rounded-full border border-coal-700 bg-coal-800 px-2.5 py-1 font-mono text-[10px] font-semibold text-paper-200">Hilt</span>
-                            <span className="rounded-full border border-coal-700 bg-coal-800 px-2.5 py-1 font-mono text-[10px] font-semibold text-paper-200">Clean Arch</span>
+                            <span className="rounded-full border border-coal-700 bg-coal-800 px-2.5 py-1 font-mono text-[10px] font-semibold text-paper-200">Clean Arch</span>                            
+                            <span className="rounded-full border border-coal-700 bg-coal-800 px-2.5 py-1 font-mono text-[10px] font-semibold text-paper-200">MVI</span>
+                            <span className="rounded-full border border-coal-700 bg-coal-800 px-2.5 py-1 font-mono text-[10px] font-semibold text-paper-200">Swift5</span>
+                            <span className="rounded-full border border-coal-700 bg-coal-800 px-2.5 py-1 font-mono text-[10px] font-semibold text-paper-200">SwiftUI</span>
+                            <span className="rounded-full border border-coal-700 bg-coal-800 px-2.5 py-1 font-mono text-[10px] font-semibold text-paper-200">MVVM</span>
+                            <span className="rounded-full border border-coal-700 bg-coal-800 px-2.5 py-1 font-mono text-[10px] font-semibold text-paper-200">Java</span>
+                            <span className="rounded-full border border-coal-700 bg-coal-800 px-2.5 py-1 font-mono text-[10px] font-semibold text-paper-200">Springboot</span>
+                            <span className="rounded-full border border-coal-700 bg-coal-800 px-2.5 py-1 font-mono text-[10px] font-semibold text-paper-200">DynamoDB</span>
+                            <span className="rounded-full border border-coal-700 bg-coal-800 px-2.5 py-1 font-mono text-[10px] font-semibold text-paper-200">CI/CD</span>
                         </div>
 
                         {/* Footer — open to relocation */}

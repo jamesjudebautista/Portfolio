@@ -14,7 +14,7 @@ const timeline: TimelineEntry[] = [
         duration: 'Current',
         company: 'Mercola Consulting Services · 🇵🇭',
         role: 'Full-Stack Developer · Android · iOS · Backend APIs',
-        description: 'Building PAX — Mercola Health Coach 2.0. Shipped 20+ feature modules in Kotlin on a 100% Jetpack Compose UI: a voice-first AI coach on LiveKit, CameraX food logging, health assessments, and lab reports, on MVVM + Clean Architecture with Hilt.',
+        description: 'Building PAX — Mercola Health Coach 2.0. Shipped 20+ feature modules in Kotlin on a 100% Jetpack Compose UI: a voice-first AI coach on LiveKit, CameraX food logging, health assessments, and lab reports, backed by AWS cloud infrastructure and Java Spring Boot APIs built on MVVM + Clean Architecture with Hilt.',
         isCurrent: true
     },
     {
@@ -22,7 +22,7 @@ const timeline: TimelineEntry[] = [
         duration: '1y',
         company: 'Department of Science & Technology · 🇵🇭',
         role: 'Technical Lead · Full-Stack · DevOps · Platform',
-        description: 'Led a cross-functional team of 4 engineers, 4 QA, and 78 OJT trainees. Defined full-stack standards, designed CI/CD, operated on-prem K8s — Jenkins, Helm, Terraform, RBAC, Prometheus/Grafana, Postgres.',
+        description: "Leadership & Infrastructure: Led a cross-functional team of 4 engineers, 4 QA, and 78 OJT trainees. Defined full-stack standards, designed CI/CD pipelines, and operated on-premise Kubernetes infrastructure (Jenkins, Helm, Terraform, RBAC, Prometheus/Grafana, PostgreSQL).\tFull-Stack Web Development: Built and maintained scalable web applications utilizing React.js with TypeScript on the frontend and Node.js with TypeScript for backend services.",
     },
     {
         dateRange: 'Jan 2024 — Feb 2025',
@@ -61,7 +61,7 @@ const timeline: TimelineEntry[] = [
     company: 'Senior Data Dynamic (SRDD) · 🇸🇬',
     role: 'Senior App Developer — Sri Sivan · M1 · EyeFly 3D',
     description:
-      'Sri Sivan POS w/ Nets + USB serial. M1 desktop POS in .NET. Solo dev for EyeFly 3D on Android + iOS.',
+      'Sri Sivan POS: Developed an M1 desktop POS system integrated with NETS and USB serial hardware peripherals, powered by a robust Java Spring Boot backend API and C# .NET.\tEyeFly 3D (Mobile): Served as the sole developer for the EyeFly 3D application across Android and iOS platforms.',
     },
     {
     dateRange: 'Aug 2016 — Jul 2018',
